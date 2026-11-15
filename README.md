@@ -234,23 +234,7 @@ Incluye utilidades, entre ellas la protección y verificación de contraseñas.
 
 El script `mongo/init_sace.js` incluye seis empleados distribuidos entre los tres tipos de contratación. Estos registros permiten demostrar búsquedas, filtros, reportes y visualización durante la defensa.
 
-## 14. Git y GitHub
-
-El trabajo debe mantenerse en un repositorio compartido. Cada integrante debe utilizar su propia cuenta y realizar commits periódicos y significativos.
-
-Ejemplos de mensajes adecuados:
-
-```text
-feat: agregar validación de empleados duplicados
-feat: implementar historial de remuneraciones
-ui: mejorar distribución del panel de empleados
-fix: validar empleados inactivos antes del cálculo
-docs: actualizar documentación de MongoDB
-```
-
-No concentrar todo el historial en una sola cuenta ni crear commits artificiales al final.
-
-## 15. Problemas comunes
+## 14. Problemas comunes
 
 ### MongoDB no disponible
 
@@ -278,7 +262,7 @@ mvn clean compile
 
 Comprobar el servicio MongoDB y cualquier configuración personalizada de red.
 
-## 16. Entrega académica
+## 15. Entrega académica
 
 La carpeta de entrega debe incluir, como mínimo:
 
@@ -290,7 +274,7 @@ La carpeta de entrega debe incluir, como mínimo:
 - Documento técnico final.
 - Evidencia y enlace del repositorio GitHub.
 
-## 17. Seguridad
+## 16. Seguridad
 
 - No almacenar contraseñas en texto plano.
 - No versionar `config.properties` si contiene información privada.
