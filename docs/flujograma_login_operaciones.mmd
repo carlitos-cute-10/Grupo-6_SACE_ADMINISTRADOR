@@ -1,0 +1,17 @@
+flowchart TD
+    I[Inicio] --> L[Mostrar Login]
+    L --> V{Credenciales válidas en MongoDB?}
+    V -- No --> M[Mostrar mensaje sin revelar datos]
+    M --> L
+    V -- Sí --> D[Dashboard]
+    D --> O{Seleccionar módulo}
+    O --> E[Empleados]
+    O --> R[Remuneraciones]
+    O --> P[Reportes]
+    O --> H[Historial]
+    O --> C[Cerrar sesión]
+    E --> D
+    R --> D
+    P --> D
+    H --> D
+    C --> L
