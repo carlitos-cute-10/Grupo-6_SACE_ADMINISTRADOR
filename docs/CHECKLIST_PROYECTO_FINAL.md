@@ -16,7 +16,9 @@
 - [x] Validaciones principales
 - [x] README y plantilla de configuración
 - [x] Script MongoDB con 6 registros
-- [ ] Integrar al GitHub real del equipo y repartir commits por integrante
+- [x] Integrar el proyecto al repositorio GitHub real del equipo
+- [ ] Agregar a Luis y Oscar como colaboradores
+- [ ] Obtener commits verificables de Luis y Oscar desde sus propias cuentas
 - [ ] Tomar capturas reales de interfaces y MongoDB
 - [ ] Actualizar UML, diagrama jerárquico y flujograma
 - [ ] Completar documento técnico final
