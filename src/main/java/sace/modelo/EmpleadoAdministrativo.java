@@ -10,5 +10,5 @@ public class EmpleadoAdministrativo extends Empleado {
     @Override public double calcularRemuneracion(){ return salarioMensual; }
     @Override public String getTipoEmpleado(){ return "Administrativo"; }
     public double getSalarioMensual(){ return salarioMensual; }
-    public final void setSalarioMensual(double v){ if(v<0) throw new IllegalArgumentException("El salario no puede ser negativo."); salarioMensual=v; }
+    public final void setSalarioMensual(double v){ if(v<=0) throw new IllegalArgumentException("El salario mensual debe ser mayor a cero."); salarioMensual=v; }
 }
