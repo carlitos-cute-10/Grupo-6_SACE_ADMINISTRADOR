@@ -1,0 +1,23 @@
+# Checklist contra la guía - Grupo 6
+
+- [x] Java 21 / proyecto compatible con NetBeans 22
+- [x] Java Swing
+- [x] Login protegido
+- [x] Credenciales en MongoDB
+- [x] Hash PBKDF2 de contraseñas
+- [x] Cierre de sesión
+- [x] Persistencia MongoDB
+- [x] Registrar/consultar/buscar/modificar empleados
+- [x] Inactivar empleados
+- [x] Administrativo / Por hora / Por comisión
+- [x] Fórmulas según guía final
+- [x] Filtrado y reportes
+- [x] Registro histórico de cálculos por período
+- [x] Validaciones principales
+- [x] README y plantilla de configuración
+- [x] Script MongoDB con 6 registros
+- [ ] Integrar al GitHub real del equipo y repartir commits por integrante
+- [ ] Tomar capturas reales de interfaces y MongoDB
+- [ ] Actualizar UML, diagrama jerárquico y flujograma
+- [ ] Completar documento técnico final
+- [ ] Ensayar defensa de máximo 15 minutos

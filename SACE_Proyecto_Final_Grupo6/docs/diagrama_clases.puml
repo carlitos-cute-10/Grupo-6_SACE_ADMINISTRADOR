@@ -1,0 +1,46 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Empleado {
+- codigo: String
+- nombre: String
+- documento: String
+- cargo: String
+- fechaIngreso: LocalDate
+- activo: boolean
++ calcularRemuneracion(): double
++ getTipoEmpleado(): String
+}
+class EmpleadoAdministrativo { - salarioMensual: double }
+class EmpleadoPorHora { - tarifaHora: double
+- horasTrabajadas: double }
+class EmpleadoPorComision { - porcentajeComision: double
+- ventas: double }
+Empleado <|-- EmpleadoAdministrativo
+Empleado <|-- EmpleadoPorHora
+Empleado <|-- EmpleadoPorComision
+class EmpleadoDAO
+class RemuneracionDAO
+class UsuarioDAO
+class EmpleadoService
+class RemuneracionService
+class LoginService
+class LoginFrame
+class MainFrame
+class EmpleadosPanel
+class RemuneracionesPanel
+class ReportesPanel
+class HistorialPanel
+class MongoConnection
+EmpleadoService --> EmpleadoDAO
+RemuneracionService --> EmpleadoDAO
+RemuneracionService --> RemuneracionDAO
+LoginService --> UsuarioDAO
+EmpleadoDAO --> MongoConnection
+RemuneracionDAO --> MongoConnection
+UsuarioDAO --> MongoConnection
+LoginFrame --> LoginService
+MainFrame *-- EmpleadosPanel
+MainFrame *-- RemuneracionesPanel
+MainFrame *-- ReportesPanel
+MainFrame *-- HistorialPanel
+@enduml
