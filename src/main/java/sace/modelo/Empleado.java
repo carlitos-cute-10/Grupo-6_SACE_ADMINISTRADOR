@@ -20,11 +20,11 @@ public abstract class Empleado {
     public String getCodigo(){ return codigo; }
     public final void setCodigo(String codigo){ if(codigo==null||codigo.isBlank()) throw new IllegalArgumentException("El código es obligatorio."); this.codigo=codigo.trim().toUpperCase(); }
     public String getNombre(){ return nombre; }
-    public final void setNombre(String nombre){ if(nombre==null||nombre.isBlank()) throw new IllegalArgumentException("El nombre es obligatorio."); this.nombre=nombre.trim(); }
+    public final void setNombre(String nombre){ if(nombre==null||!nombre.matches("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$")) throw new IllegalArgumentException("El nombre es obligatorio y no puede contener ni números ni caracteres especiales."); this.nombre=nombre.trim(); }
     public String getDocumento(){ return documento; }
     public final void setDocumento(String documento){ if(documento==null||documento.isBlank()) throw new IllegalArgumentException("El documento es obligatorio."); this.documento=documento.trim(); }
     public String getCargo(){ return cargo; }
-    public final void setCargo(String cargo){ if(cargo==null||cargo.isBlank()) throw new IllegalArgumentException("El cargo es obligatorio."); this.cargo=cargo.trim(); }
+    public final void setCargo(String cargo){ if(cargo==null||!cargo.matches("^^[a-zA-Záé''ióúÁÉÍÓÚñÑ\\s]+$")) throw new IllegalArgumentException("El cargo es obligatorio y no puede contener números."); this.cargo = cargo.trim(); }
     public LocalDate getFechaIngreso(){ return fechaIngreso; }
     public final void setFechaIngreso(LocalDate fechaIngreso){ if(fechaIngreso==null) throw new IllegalArgumentException("La fecha de ingreso es obligatoria."); if(fechaIngreso.isAfter(LocalDate.now())) throw new IllegalArgumentException("La fecha de ingreso no puede estar en el futuro."); this.fechaIngreso=fechaIngreso; }
     public boolean isActivo(){ return activo; }
